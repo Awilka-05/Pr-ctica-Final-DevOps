@@ -4,37 +4,40 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build-test-docker:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout código
+    - name: Checkout del repositorio
       uses: actions/checkout@v4
 
-    - name: Instalar .NET
+    - name: Configurar .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
 
     - name: Restaurar dependencias
-      run: dotnet restore
+      run: dotnet restore HolaMundoDevOps/HolaMundoDevOps.csproj
 
-    - name: Compilar
-      run: dotnet build --no-restore
+    - name: Compilar aplicación
+      run: dotnet build HolaMundoDevOps/HolaMundoDevOps.csproj --no-restore
 
     - name: Ejecutar pruebas unitarias
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test
 
-    - name: Login a Docker Hub
+    - name: Login en Docker Hub
       uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Construir y subir imagen Docker
-      run: |
-        docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/hola-mundo-devops:latest ./HolaMundoDevOps
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hola-mundo-devops:latest
+    - name: Construir imagen Docker
+      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/hola-mundo-devops:latest ./HolaMundoDevOps
 
+    - name: Subir imagen a Docker Hub
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/hola-mundo-devops:latest
