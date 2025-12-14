@@ -22,13 +22,13 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restaurar dependencias
-      run: dotnet restore HolaMundoDevOps/HolaMundoDevOps.csproj
+      run: dotnet restore
 
     - name: Compilar aplicación
-      run: dotnet build HolaMundoDevOps/HolaMundoDevOps.csproj --no-restore
+      run: dotnet build --no-restore
 
     - name: Ejecutar pruebas unitarias
-      run: dotnet test
+      run: dotnet test HolaMundoDevOps.Tests/HolaMundoDevOps.Tests.csproj
 
     - name: Login en Docker Hub
       uses: docker/login-action@v3
