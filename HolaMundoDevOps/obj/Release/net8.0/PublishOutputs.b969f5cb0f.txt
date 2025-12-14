@@ -1,0 +1,13 @@
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\HolaMundoDevOps.exe
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\out\web.config
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\appsettings.Development.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\appsettings.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\out\appsettings.Development.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\out\appsettings.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\out\HolaMundoDevOps.deps.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\out\HolaMundoDevOps.runtimeconfig.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\out\HolaMundoDevOps.staticwebassets.endpoints.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\HolaMundoDevOps.dll
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\HolaMundoDevOps.deps.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\HolaMundoDevOps.runtimeconfig.json
+C:\Users\o.o\OneDrive\Documentos\examenfinal\DevOpsFinal\HolaMundoDevOps\out\HolaMundoDevOps.pdb
